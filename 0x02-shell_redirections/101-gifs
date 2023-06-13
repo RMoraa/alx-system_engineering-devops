@@ -1,2 +1,2 @@
 #!/bin/bash
-cut -c 1 | paste -s -d ''
+find -name '*.gif' -type f -printf '%f\n' |  LC_ALL=C sort -f | rev | cut -c 5- | rev
